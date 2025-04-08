@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// RideX custom colors
+				ridex: {
+					teal: '#0AB8B5',
+					navy: '#1A355B',
+					orange: '#FF8627',
+					lightGray: '#F4F7FA',
+					darkGray: '#4A5567',
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +93,22 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+				"fade-in": {
+					"0%": {
+						opacity: "0",
+						transform: "translateY(10px)"
+					},
+					"100%": {
+						opacity: "1",
+						transform: "translateY(0)"
+					}
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				"fade-in": "fade-in 0.5s ease-out",
 			}
 		}
 	},
