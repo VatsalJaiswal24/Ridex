@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Car, Clock, MapPin, Calendar, DollarSign, UserCheck } from 'lucide-react';
 import { useAuth } from '@/context/AuthContext';
@@ -91,7 +90,10 @@ const DriverDashboard = () => {
         // In a real app, you would call an API to accept the ride
         const acceptedRide = rideRequests.find(ride => ride.id === rideId);
         if (acceptedRide) {
-          const updatedRide = { ...acceptedRide, status: 'accepted' };
+          const updatedRide: Ride = { 
+            ...acceptedRide, 
+            status: 'accepted' as const 
+          };
           setRideRequests(rideRequests.filter(ride => ride.id !== rideId));
           setAcceptedRides([...acceptedRides, updatedRide]);
           

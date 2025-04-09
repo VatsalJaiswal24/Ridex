@@ -7,7 +7,7 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import RideCard from '@/components/rides/RideCard';
 import MapView from '@/components/ui/MapView';
-import { Ride, User } from '@/lib/types';
+import { Ride, User, UserRole } from '@/lib/types';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 
@@ -29,7 +29,7 @@ const RiderDashboard = () => {
         id: 'd1',
         name: 'John Driver',
         email: 'john@example.com',
-        role: 'driver',
+        role: UserRole.DRIVER,
       },
       status: 'completed',
     },
@@ -53,7 +53,7 @@ const RiderDashboard = () => {
         id: 'd2',
         name: 'Sarah Driver',
         email: 'sarah@example.com',
-        role: 'driver',
+        role: UserRole.DRIVER,
       },
       status: 'accepted',
     }
