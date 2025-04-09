@@ -50,7 +50,7 @@ const RideCard: React.FC<RideCardProps> = ({ ride, viewType, onAction }) => {
           </div>
           <div className="flex items-center text-sm">
             <DollarSign className="h-4 w-4 text-ridex-orange mr-1" />
-            <span className="font-medium">${ride.price.toFixed(2)}</span>
+            <span className="font-medium">₹{ride.price.toFixed(2)}</span>
           </div>
         </div>
         

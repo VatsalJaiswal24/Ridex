@@ -94,7 +94,7 @@ const Footer = () => {
               </div>
               <div className="flex items-start space-x-3">
                 <Phone size={18} className="mt-0.5" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">+91 98765 43210</span>
               </div>
             </div>
           </div>
@@ -102,6 +102,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
           <p>&copy; {new Date().getFullYear()} RideX. All rights reserved.</p>
+          <p className="mt-2">Created by Vatsal Jaiswal</p>
         </div>
       </div>
     </footer>

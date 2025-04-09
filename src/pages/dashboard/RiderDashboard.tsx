@@ -16,43 +16,43 @@ const RiderDashboard = () => {
   const navigate = useNavigate();
   const { toast } = useToast();
   
-  // Mock data for rides
+  // Mock data for rides with Indian context
   const [rides, setRides] = useState<Ride[]>([
     {
       id: '1',
-      pickup: '123 Main St, Anytown',
-      destination: '456 Oak Ave, Somewhere',
+      pickup: 'Andheri East, Mumbai',
+      destination: 'Bandra West, Mumbai',
       date: '2025-04-10',
       time: '09:30 AM',
-      price: 24.50,
+      price: 350.00,
       driver: {
         id: 'd1',
-        name: 'John Driver',
-        email: 'john@example.com',
+        name: 'Rajesh Kumar',
+        email: 'rajesh@example.com',
         role: UserRole.DRIVER,
       },
       status: 'completed',
     },
     {
       id: '2',
-      pickup: '789 Elm St, Hometown',
-      destination: '101 Pine Rd, Otherplace',
+      pickup: 'MG Road, Bangalore',
+      destination: 'Electronic City, Bangalore',
       date: '2025-04-12',
       time: '02:15 PM',
-      price: 18.75,
+      price: 275.50,
       status: 'pending',
     },
     {
       id: '3',
-      pickup: '202 Maple Dr, Cityville',
-      destination: '303 Birch Ln, Townsburg',
+      pickup: 'Connaught Place, Delhi',
+      destination: 'Gurgaon, Delhi NCR',
       date: '2025-04-15',
       time: '10:00 AM',
-      price: 32.20,
+      price: 520.75,
       driver: {
         id: 'd2',
-        name: 'Sarah Driver',
-        email: 'sarah@example.com',
+        name: 'Priya Sharma',
+        email: 'priya@example.com',
         role: UserRole.DRIVER,
       },
       status: 'accepted',

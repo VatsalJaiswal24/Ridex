@@ -75,10 +75,10 @@ const Index = () => {
                 <div className="absolute -bottom-8 -left-8 bg-white text-gray-800 p-6 rounded-lg shadow-lg max-w-xs">
                   <div className="flex items-center space-x-2 mb-3">
                     <div className="h-10 w-10 rounded-full bg-ridex-teal text-white flex items-center justify-center font-bold">
-                      JD
+                      AM
                     </div>
                     <div>
-                      <div className="font-medium">John D.</div>
+                      <div className="font-medium">Anil M.</div>
                       <div className="flex items-center text-yellow-500">
                         <Star className="h-3 w-3 fill-current" />
                         <Star className="h-3 w-3 fill-current" />
@@ -89,7 +89,7 @@ const Index = () => {
                     </div>
                   </div>
                   <p className="text-sm">
-                    "RideX has made my daily commute so much more affordable and enjoyable. I've met great people along the way!"
+                    "RideX has made my daily commute to office so much more affordable. I've met great people during my rides!"
                   </p>
                 </div>
                 
@@ -97,11 +97,11 @@ const Index = () => {
                 <div className="absolute -top-8 -right-8 bg-white text-gray-800 p-4 rounded-lg shadow-lg">
                   <div className="flex items-center space-x-2 text-sm">
                     <MapPin className="h-4 w-4 text-ridex-teal" />
-                    <div className="font-medium">San Francisco → LA</div>
+                    <div className="font-medium">Mumbai → Pune</div>
                   </div>
                   <div className="flex justify-between items-center mt-2">
                     <div className="text-xs text-gray-500">3 available rides</div>
-                    <div className="font-medium text-ridex-orange">$45</div>
+                    <div className="font-medium text-ridex-orange">₹850</div>
                   </div>
                 </div>
               </div>
@@ -228,12 +228,12 @@ const Index = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-in">
               {[
-                { from: 'San Francisco', to: 'Los Angeles', price: '$45', availability: 'High' },
-                { from: 'New York', to: 'Boston', price: '$35', availability: 'Medium' },
-                { from: 'Chicago', to: 'Detroit', price: '$30', availability: 'High' },
-                { from: 'Seattle', to: 'Portland', price: '$25', availability: 'Medium' },
-                { from: 'Austin', to: 'Dallas', price: '$20', availability: 'High' },
-                { from: 'Miami', to: 'Orlando', price: '$28', availability: 'Medium' },
+                { from: 'Mumbai', to: 'Pune', price: '₹850', availability: 'High' },
+                { from: 'Delhi', to: 'Chandigarh', price: '₹1200', availability: 'Medium' },
+                { from: 'Bangalore', to: 'Mysore', price: '₹650', availability: 'High' },
+                { from: 'Chennai', to: 'Pondicherry', price: '₹750', availability: 'Medium' },
+                { from: 'Hyderabad', to: 'Warangal', price: '₹550', availability: 'High' },
+                { from: 'Kolkata', to: 'Siliguri', price: '₹1500', availability: 'Medium' },
               ].map((route, i) => (
                 <div key={i} className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow p-6">
                   <div className="flex justify-between items-center mb-4">
@@ -335,7 +335,7 @@ const Index = () => {
                 {/* Floating earnings card */}
                 <div className="absolute top-8 -right-8 bg-white text-gray-800 p-6 rounded-lg shadow-lg">
                   <h3 className="font-bold text-lg text-ridex-navy mb-2">Monthly Earnings</h3>
-                  <div className="text-3xl font-bold text-ridex-teal mb-2">$675</div>
+                  <div className="text-3xl font-bold text-ridex-teal mb-2">₹25,000</div>
                   <div className="flex items-center text-sm text-green-600">
                     <span>↑ 12% from last month</span>
                   </div>
@@ -358,19 +358,19 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-fade-in">
               {[
                 {
-                  name: "Sarah K.",
+                  name: "Kavita P.",
                   type: "Rider",
-                  comment: "RideX has transformed my daily commute. I save money and have met some amazing people along the way!",
+                  comment: "RideX has transformed my daily commute to work. I save money and have met some amazing people on the way!",
                   rating: 5
                 },
                 {
-                  name: "Michael T.",
+                  name: "Rohit T.",
                   type: "Driver",
                   comment: "As a driver, I've been able to offset my travel costs significantly while helping others get where they need to go.",
                   rating: 5
                 },
                 {
-                  name: "Jennifer L.",
+                  name: "Neha L.",
                   type: "Rider",
                   comment: "The app is so easy to use, and I feel safe with the verification process and real-time tracking.",
                   rating: 4
