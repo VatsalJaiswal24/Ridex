@@ -1,6 +1,15 @@
 
 import * as React from "react";
 
+// Add this type declaration to recognize Capacitor on the window object
+declare global {
+  interface Window {
+    Capacitor?: {
+      isNativePlatform: boolean;
+    };
+  }
+}
+
 export function useNativePlatform() {
   const [isNative, setIsNative] = React.useState<boolean>(false);
   const [platform, setPlatform] = React.useState<'web' | 'ios' | 'android'>('web');
