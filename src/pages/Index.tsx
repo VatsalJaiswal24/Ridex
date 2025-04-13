@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { MapPin, Shield, CreditCard, Clock, Star, ChevronRight } from 'lucide-react';
@@ -65,15 +64,13 @@ const Index = () => {
               
               <div className="relative hidden lg:block animate-fade-in">
                 <div className="aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-                  {/* Adding the actual hero image here */}
                   <img 
-                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
-                    alt="People carpooling together" 
+                    src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" 
+                    alt="People sitting together in a car" 
                     className="w-full h-full object-cover"
                   />
                 </div>
                 
-                {/* Floating card */}
                 <div className="absolute -bottom-8 -left-8 bg-white text-gray-800 p-6 rounded-lg shadow-lg max-w-xs">
                   <div className="flex items-center space-x-2 mb-3">
                     <div className="h-10 w-10 rounded-full bg-ridex-teal text-white flex items-center justify-center font-bold">
@@ -95,7 +92,6 @@ const Index = () => {
                   </p>
                 </div>
                 
-                {/* Floating card */}
                 <div className="absolute -top-8 -right-8 bg-white text-gray-800 p-4 rounded-lg shadow-lg">
                   <div className="flex items-center space-x-2 text-sm">
                     <MapPin className="h-4 w-4 text-ridex-teal" />
@@ -328,7 +324,6 @@ const Index = () => {
               
               <div className="relative hidden lg:block animate-fade-in">
                 <div className="aspect-square bg-white/10 rounded-lg overflow-hidden">
-                  {/* Adding an actual driver image here */}
                   <img 
                     src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
                     alt="Driver dashboard" 
@@ -336,7 +331,6 @@ const Index = () => {
                   />
                 </div>
                 
-                {/* Floating earnings card */}
                 <div className="absolute top-8 -right-8 bg-white text-gray-800 p-6 rounded-lg shadow-lg">
                   <h3 className="font-bold text-lg text-ridex-navy mb-2">Monthly Earnings</h3>
                   <div className="text-3xl font-bold text-ridex-teal mb-2">₹25,000</div>
