@@ -65,8 +65,8 @@ const Index = () => {
               <div className="relative hidden lg:block animate-fade-in">
                 <div className="aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" 
-                    alt="People sitting together in a car" 
+                    src="https://images.unsplash.com/photo-1469072645416-6128da11b526" 
+                    alt="People sharing a ride together" 
                     className="w-full h-full object-cover"
                   />
                 </div>
