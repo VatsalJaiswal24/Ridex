@@ -65,10 +65,12 @@ const Index = () => {
               
               <div className="relative hidden lg:block animate-fade-in">
                 <div className="aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-                  {/* This would be an image in a real app */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <p className="text-gray-500 font-medium">Hero Image</p>
-                  </div>
+                  {/* Adding the actual hero image here */}
+                  <img 
+                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
+                    alt="People carpooling together" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 
                 {/* Floating card */}
@@ -326,10 +328,12 @@ const Index = () => {
               
               <div className="relative hidden lg:block animate-fade-in">
                 <div className="aspect-square bg-white/10 rounded-lg overflow-hidden">
-                  {/* This would be an image in a real app */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <p className="text-white/70 font-medium">Driver Image</p>
-                  </div>
+                  {/* Adding an actual driver image here */}
+                  <img 
+                    src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
+                    alt="Driver dashboard" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 
                 {/* Floating earnings card */}
