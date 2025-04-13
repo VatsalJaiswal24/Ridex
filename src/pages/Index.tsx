@@ -34,8 +34,7 @@ const Index = () => {
                     Book a Ride <ChevronRight className="ml-2 h-5 w-5" />
                   </Button>
                   <Button 
-                    variant="outline"
-                    className="text-white border-white hover:bg-white/10 px-8 py-6 rounded-md"
+                    className="bg-ridex-orange text-white hover:bg-ridex-orange/90 px-8 py-6 rounded-md"
                     onClick={() => navigate('/become-driver')}
                   >
                     Become a Driver
