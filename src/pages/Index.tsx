@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { MapPin, Shield, CreditCard, Clock, Star, ChevronRight } from 'lucide-react';
@@ -65,7 +64,7 @@ const Index = () => {
               <div className="relative hidden lg:block animate-fade-in">
                 <div className="aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1469072645416-6128da11b526?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
+                    src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" 
                     alt="People sharing a ride together" 
                     className="w-full h-full object-cover"
                   />
