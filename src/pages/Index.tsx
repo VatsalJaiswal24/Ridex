@@ -64,8 +64,8 @@ const Index = () => {
               <div className="relative hidden lg:block animate-fade-in">
                 <div className="aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1519737777535-d2ff050060e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" 
-                    alt="Carpooling friends sharing a ride" 
+                    src="https://images.pexels.com/photos/7433822/pexels-photo-7433822.jpeg" 
+                    alt="Friends carpooling together" 
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -348,7 +348,7 @@ const Index = () => {
               <div className="relative hidden lg:block animate-fade-in">
                 <div className="aspect-square bg-white/10 rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1517032881781-3fc4e844db7b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" 
+                    src="https://images.pexels.com/photos/3811867/pexels-photo-3811867.jpeg" 
                     alt="Driver using mobile app for ridesharing" 
                     className="w-full h-full object-cover"
                   />
@@ -383,21 +383,21 @@ const Index = () => {
                   type: "Rider",
                   comment: "RideX has transformed my daily commute to work. I save money and have met some amazing people on the way!",
                   rating: 5,
-                  image: "https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80"
+                  image: "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg"
                 },
                 {
                   name: "Rohit T.",
                   type: "Driver",
                   comment: "As a driver, I've been able to offset my travel costs significantly while helping others get where they need to go.",
                   rating: 5,
-                  image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80"
+                  image: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg"
                 },
                 {
                   name: "Neha L.",
                   type: "Rider",
                   comment: "The app is so easy to use, and I feel safe with the verification process and real-time tracking.",
                   rating: 4,
-                  image: "https://images.unsplash.com/photo-1573496359193-1c9d5fa9e9b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80"
+                  image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg"
                 }
               ].map((testimonial, i) => (
                 <div key={i} className="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
