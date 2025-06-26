@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -11,6 +10,7 @@ import { useToast } from '@/hooks/use-toast';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import { Car, FileText, Shield, Upload } from 'lucide-react';
+import { driverService } from '@/lib/supabase-driver';
 
 const BecomeDriver = () => {
   const { toast } = useToast();
@@ -90,11 +90,47 @@ const BecomeDriver = () => {
         return;
       }
 
-      // Here we would normally save to Supabase
-      console.log('Driver application submitted:', formData);
+      // Check if application already exists
+      const existingApplication = await driverService.getApplicationByEmail(formData.email);
+      if (existingApplication) {
+        toast({
+          title: "Application Already Exists",
+          description: `You have already submitted an application. Status: ${existingApplication.status}`,
+          variant: "destructive",
+        });
+        return;
+      }
+
+      // Submit to Supabase
+      const applicationData = {
+        full_name: formData.fullName,
+        email: formData.email,
+        phone: formData.phone,
+        date_of_birth: formData.dateOfBirth,
+        address: formData.address,
+        city: formData.city,
+        state: formData.state,
+        pincode: formData.pincode,
+        aadhar_number: formData.aadharNumber,
+        pan_number: formData.panNumber,
+        driving_license_number: formData.drivingLicenseNumber,
+        driving_license_expiry: formData.drivingLicenseExpiry,
+        vehicle_type: formData.vehicleType,
+        vehicle_make: formData.vehicleMake,
+        vehicle_model: formData.vehicleModel,
+        vehicle_year: formData.vehicleYear,
+        vehicle_number: formData.vehicleNumber,
+        vehicle_color: formData.vehicleColor,
+        seating_capacity: formData.seatingCapacity,
+        experience: formData.experience,
+        availability: formData.availability,
+        about_you: formData.aboutYou,
+      };
+
+      await driverService.submitApplication(applicationData);
       
       toast({
-        title: "Application Submitted!",
+        title: "Application Submitted Successfully!",
         description: "We'll review your application and get back to you within 2-3 business days.",
       });
 
@@ -108,6 +144,7 @@ const BecomeDriver = () => {
       });
 
     } catch (error) {
+      console.error('Error submitting application:', error);
       toast({
         title: "Submission Failed",
         description: "There was an error submitting your application. Please try again.",
@@ -156,7 +193,7 @@ const BecomeDriver = () => {
             <div className="max-w-4xl mx-auto">
               <div className="bg-white rounded-lg shadow-lg p-8">
                 <h2 className="text-2xl font-bold text-ridex-navy mb-6">Driver Application Form</h2>
-                <p className="text-gray-600 mb-8">Please fill out all sections to complete your driver application.</p>
+                <p className="text-gray-600 mb-8">Please fill out all sections to complete your driver application. Your data will be securely stored in our database.</p>
 
                 <form onSubmit={handleSubmit} className="space-y-8">
                   {/* Personal Information */}
@@ -297,13 +334,13 @@ const BecomeDriver = () => {
                       </div>
                     </div>
                     
-                    <div className="mt-4 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
+                    <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
                       <div className="flex items-center gap-2 mb-2">
-                        <Upload className="w-5 h-5 text-yellow-600" />
-                        <p className="font-medium text-yellow-800">Document Upload Required</p>
+                        <Upload className="w-5 h-5 text-blue-600" />
+                        <p className="font-medium text-blue-800">Document Storage</p>
                       </div>
-                      <p className="text-sm text-yellow-700">
-                        After Supabase integration, you'll be able to upload clear photos of your Aadhar Card, PAN Card, and Driving License.
+                      <p className="text-sm text-blue-700">
+                        Your document information is securely stored in our database. Document upload functionality will be added soon.
                       </p>
                     </div>
                   </div>
