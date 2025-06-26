@@ -14,6 +14,11 @@ import DriverDashboard from "./pages/dashboard/DriverDashboard";
 import StaffDashboard from "./pages/dashboard/StaffDashboard";
 import BookRide from "./pages/BookRide";
 import Payment from "./pages/Payment";
+import About from "./pages/About";
+import Help from "./pages/Help";
+import Safety from "./pages/Safety";
+import Terms from "./pages/Terms";
+import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
 import { useEffect } from "react";
 
@@ -51,6 +56,11 @@ const App = () => {
               <Route path="/dashboard/staff" element={<StaffDashboard />} />
               <Route path="/book-ride" element={<BookRide />} />
               <Route path="/payment" element={<Payment />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/help" element={<Help />} />
+              <Route path="/safety" element={<Safety />} />
+              <Route path="/terms" element={<Terms />} />
+              <Route path="/privacy" element={<Privacy />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
