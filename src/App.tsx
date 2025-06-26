@@ -8,6 +8,7 @@ import { AuthProvider } from "./context/AuthContext";
 import Index from "./pages/Index";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import BecomeDriver from "./pages/BecomeDriver";
 import RiderDashboard from "./pages/dashboard/RiderDashboard";
 import DriverDashboard from "./pages/dashboard/DriverDashboard";
 import StaffDashboard from "./pages/dashboard/StaffDashboard";
@@ -44,6 +45,7 @@ const App = () => {
               <Route path="/" element={<Index />} />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
+              <Route path="/become-driver" element={<BecomeDriver />} />
               <Route path="/dashboard/rider" element={<RiderDashboard />} />
               <Route path="/dashboard/driver" element={<DriverDashboard />} />
               <Route path="/dashboard/staff" element={<StaffDashboard />} />
