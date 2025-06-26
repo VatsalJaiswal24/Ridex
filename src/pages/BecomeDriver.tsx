@@ -193,7 +193,7 @@ const BecomeDriver = () => {
             <div className="max-w-4xl mx-auto">
               <div className="bg-white rounded-lg shadow-lg p-8">
                 <h2 className="text-2xl font-bold text-ridex-navy mb-6">Driver Application Form</h2>
-                <p className="text-gray-600 mb-8">Please fill out all sections to complete your driver application. Your data will be securely stored in our database.</p>
+                <p className="text-gray-600 mb-8">Please fill out all sections to complete your driver application. Your data will be stored locally for demonstration purposes.</p>
 
                 <form onSubmit={handleSubmit} className="space-y-8">
                   {/* Personal Information */}
@@ -340,7 +340,7 @@ const BecomeDriver = () => {
                         <p className="font-medium text-blue-800">Document Storage</p>
                       </div>
                       <p className="text-sm text-blue-700">
-                        Your document information is securely stored in our database. Document upload functionality will be added soon.
+                        Your document information is stored locally for demonstration purposes. In a production environment, this would be securely stored in a database.
                       </p>
                     </div>
                   </div>

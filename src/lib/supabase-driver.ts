@@ -1,54 +1,55 @@
 
-import { supabase } from '@/integrations/supabase/client';
 import { DriverApplication } from './types';
 
 export const driverService = {
   async submitApplication(application: Omit<DriverApplication, 'id' | 'created_at' | 'updated_at' | 'status'>) {
-    const { data, error } = await supabase
-      .from('driver_applications')
-      .insert([{
-        ...application,
-        status: 'pending'
-      }])
-      .select()
-      .single();
+    // Simulate API delay
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    
+    const newApplication: DriverApplication = {
+      id: Date.now().toString(),
+      ...application,
+      status: 'pending',
+      created_at: new Date().toISOString(),
+      updated_at: new Date().toISOString()
+    };
 
-    if (error) {
-      console.error('Error submitting driver application:', error);
-      throw error;
-    }
+    // Store in localStorage for demo purposes
+    const existingApplications = JSON.parse(localStorage.getItem('driver_applications') || '[]');
+    existingApplications.push(newApplication);
+    localStorage.setItem('driver_applications', JSON.stringify(existingApplications));
 
-    return data;
+    return newApplication;
   },
 
   async getApplicationByEmail(email: string) {
-    const { data, error } = await supabase
-      .from('driver_applications')
-      .select('*')
-      .eq('email', email)
-      .single();
-
-    if (error && error.code !== 'PGRST116') {
-      console.error('Error fetching driver application:', error);
-      throw error;
-    }
-
-    return data;
+    // Simulate API delay
+    await new Promise(resolve => setTimeout(resolve, 500));
+    
+    const applications = JSON.parse(localStorage.getItem('driver_applications') || '[]');
+    const application = applications.find((app: DriverApplication) => app.email === email);
+    
+    return application || null;
   },
 
   async updateApplicationStatus(id: string, status: 'pending' | 'approved' | 'rejected') {
-    const { data, error } = await supabase
-      .from('driver_applications')
-      .update({ status, updated_at: new Date().toISOString() })
-      .eq('id', id)
-      .select()
-      .single();
-
-    if (error) {
-      console.error('Error updating driver application status:', error);
-      throw error;
+    // Simulate API delay
+    await new Promise(resolve => setTimeout(resolve, 500));
+    
+    const applications = JSON.parse(localStorage.getItem('driver_applications') || '[]');
+    const applicationIndex = applications.findIndex((app: DriverApplication) => app.id === id);
+    
+    if (applicationIndex === -1) {
+      throw new Error('Application not found');
     }
 
-    return data;
+    applications[applicationIndex] = {
+      ...applications[applicationIndex],
+      status,
+      updated_at: new Date().toISOString()
+    };
+
+    localStorage.setItem('driver_applications', JSON.stringify(applications));
+    return applications[applicationIndex];
   }
 };
