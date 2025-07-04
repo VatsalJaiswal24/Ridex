@@ -15,7 +15,7 @@ const Footer = () => {
               Connecting riders and drivers for a more sustainable and affordable transportation solution.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-ridex-orange">
+              <a href="https://www.facebook.com/vatsaljaiswal1999" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-ridex-orange">
                 <Facebook size={20} />
               </a>
               <a href="#" className="text-gray-300 hover:text-ridex-orange">
@@ -24,7 +24,7 @@ const Footer = () => {
               <a href="https://www.instagram.com/vatsal_jaiswal?igsh=bHdjeWV2dmZqOHFl" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-ridex-orange">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-ridex-orange">
+              <a href="https://www.linkedin.com/in/vatsaljaiswal/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-ridex-orange">
                 <Linkedin size={20} />
               </a>
             </div>
@@ -90,11 +90,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
                 <Mail size={18} className="mt-0.5" />
-                <span className="text-gray-300">hello@ridex.com</span>
+                <span className="text-gray-300">vatsaljaiswal1@gmail.com</span>
               </div>
               <div className="flex items-start space-x-3">
                 <Phone size={18} className="mt-0.5" />
-                <span className="text-gray-300">+91 98765 43210</span>
+                <span className="text-gray-300">+91-8299534645</span>
               </div>
             </div>
           </div>
