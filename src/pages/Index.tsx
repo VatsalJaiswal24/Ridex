@@ -64,8 +64,8 @@ const Index = () => {
               <div className="relative hidden lg:block animate-fade-in">
                 <div className="aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.pexels.com/photos/7433822/pexels-photo-7433822.jpeg" 
-                    alt="Friends carpooling together" 
+                    src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    alt="Indian friends carpooling together" 
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -206,29 +206,29 @@ const Index = () => {
               <div className="grid grid-cols-2 gap-6 animate-fade-in">
                 <div className="aspect-square rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1521335629791-ce4aec67dd15?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
-                    alt="Happy carpooling passengers" 
+                    src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                    alt="Happy Indian carpooling passengers" 
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="aspect-square rounded-lg overflow-hidden translate-y-12">
                   <img 
-                    src="https://images.unsplash.com/photo-1453591969656-268c2467d127?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
-                    alt="People sharing a car ride" 
+                    src="https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                    alt="Indian people sharing car ride" 
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="aspect-square rounded-lg overflow-hidden translate-y-6">
                   <img 
-                    src="https://images.unsplash.com/photo-1495562569060-2eec283d3391?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
-                    alt="Mobile app payment for ride" 
+                    src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                    alt="Mobile payment in India" 
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="aspect-square rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
-                    alt="Friendly driver and passenger" 
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                    alt="Indian driver smiling" 
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -348,8 +348,8 @@ const Index = () => {
               <div className="relative hidden lg:block animate-fade-in">
                 <div className="aspect-square bg-white/10 rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.pexels.com/photos/3811867/pexels-photo-3811867.jpeg" 
-                    alt="Driver using mobile app for ridesharing" 
+                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    alt="Indian driver using mobile app for ridesharing" 
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -383,21 +383,21 @@ const Index = () => {
                   type: "Rider",
                   comment: "RideX has transformed my daily commute to work. I save money and have met some amazing people on the way!",
                   rating: 5,
-                  image: "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg"
+                  image: "https://images.unsplash.com/photo-1494790108755-2616c6c97b8d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
                 },
                 {
                   name: "Rohit T.",
                   type: "Driver",
                   comment: "As a driver, I've been able to offset my travel costs significantly while helping others get where they need to go.",
                   rating: 5,
-                  image: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg"
+                  image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
                 },
                 {
                   name: "Neha L.",
                   type: "Rider",
                   comment: "The app is so easy to use, and I feel safe with the verification process and real-time tracking.",
                   rating: 4,
-                  image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg"
+                  image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
                 }
               ].map((testimonial, i) => (
                 <div key={i} className="bg-white border border-gray-200 rounded-lg shadow-sm p-6">

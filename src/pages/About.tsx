@@ -37,8 +37,8 @@ const About = () => {
               </div>
               <div className="aspect-square rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                  alt="Team collaboration" 
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  alt="Indian team collaboration" 
                   className="w-full h-full object-cover"
                 />
               </div>
