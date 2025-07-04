@@ -21,7 +21,7 @@ const Footer = () => {
               <a href="#" className="text-gray-300 hover:text-ridex-orange">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-ridex-orange">
+              <a href="https://www.instagram.com/vatsal_jaiswal?igsh=bHdjeWV2dmZqOHFl" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-ridex-orange">
                 <Instagram size={20} />
               </a>
               <a href="#" className="text-gray-300 hover:text-ridex-orange">
