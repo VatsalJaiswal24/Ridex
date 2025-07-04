@@ -206,7 +206,7 @@ const Index = () => {
               <div className="grid grid-cols-2 gap-6 animate-fade-in">
                 <div className="aspect-square rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                    src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
                     alt="Happy Indian carpooling passengers" 
                     className="w-full h-full object-cover"
                   />
